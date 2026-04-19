@@ -3,49 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safety Tips</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cybersecurity Basics | Safety Tips</title>
+    <meta name="description" content="Use these beginner-friendly safety tips to protect your accounts, devices, and personal information online.">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">Cybersecurity Basics</a>
+            <p class="tagline">Simple habits can make a big difference.</p>
+        </div>
+    </header>
 
-<header class="site-header">
-    <div class="container">
-        <h1>Cybersecurity Basics</h1>
-        <p class="tagline">Simple habits can make a big difference.</p>
-    </div>
-</header>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-links">
+            <a href="index.html">Home</a>
+            <a href="threats.html">Threats</a>
+            <a href="tips.html">Safety Tips</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<nav class="site-nav" aria-label="Main navigation">
-    <div class="container nav-links">
-        <a href="index.html">Home</a>
-        <a href="threats.html">Threats</a>
-        <a href="tips.html">Safety Tips</a>
-    </div>
-</nav>
+    <main class="container">
+        <section class="page-banner">
+            <p class="eyebrow">SMARTER BROWSING</p>
+            <h1>Everyday safety tips</h1>
+            <p>Follow these basic steps to improve your cybersecurity habits.</p>
+            <a class="button primary" href="tools.html">View Helpful Tools</a>
+        </section>
 
-<main class="container">
-    <section class="page-banner">
-        <p class="eyebrow">SMARTER BROWSING</p>
-        <h2>Everyday safety tips</h2>
-        <p>Use these steps to better protect your accounts, devices, and information.</p>
-    </section>
+        <section class="split-layout">
+            <article class="list-card">
+                <h2>Top safety tips</h2>
+                <ul>
+                    <li>Use strong and unique passwords.</li>
+                    <li>Turn on two-factor authentication when possible.</li>
+                    <li>Do not click suspicious email or message links.</li>
+                    <li>Keep devices and apps updated.</li>
+                    <li>Use secure Wi-Fi before entering private information.</li>
+                    <li>Sign out of shared or public computers.</li>
+                </ul>
+            </article>
 
-    <section class="list-card">
-        <ul>
-            <li>Use strong and unique passwords for important accounts.</li>
-            <li>Enable two-factor authentication whenever possible.</li>
-            <li>Avoid clicking suspicious links in emails or messages.</li>
-            <li>Keep your apps, phone, and computer updated.</li>
-            <li>Use secure Wi-Fi before entering personal information.</li>
-        </ul>
-    </section>
-</main>
+            <aside class="image-panel">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80"
+                     alt="Person working on a computer with digital security graphics">
+            </aside>
+        </section>
+    </main>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2026 Cybersecurity Basics</p>
-    </div>
-</footer>
-
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Cybersecurity Basics</h3>
+                <p>Simple tips for safer browsing.</p>
+            </div>
+            <div>
+                <h3>Helpful Links</h3>
+                <ul class="footer-list">
+                    <li><a href="https://staysafeonline.org/" target="_blank" rel="noopener noreferrer">National Cybersecurity Alliance</a></li>
+                    <li><a href="https://www.cisa.gov/" target="_blank" rel="noopener noreferrer">CISA</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Cybersecurity Basics</p>
+    </footer>
 </body>
 </html>
