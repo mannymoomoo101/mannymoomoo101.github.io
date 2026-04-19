@@ -342,8 +342,6 @@ textarea:focus {
         font-size: 2.1rem;
     }
 
-/* === IMAGE STYLING (UPGRADED) === */
-
 .hero-image,
 .image-section {
     display: flex;
@@ -360,19 +358,16 @@ textarea:focus {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Hover effect (makes it feel dynamic) */
 .hero-image img:hover,
 .image-section img:hover {
     transform: scale(1.02);
     box-shadow: 0 25px 55px rgba(0, 212, 255, 0.25);
 }
 
-/* Adds spacing consistency */
 .image-section {
     padding: 20px;
 }
 
-/* Optional glow effect for cybersecurity vibe */
 .hero-image img {
     border: 1px solid rgba(0, 212, 255, 0.25);
 }
