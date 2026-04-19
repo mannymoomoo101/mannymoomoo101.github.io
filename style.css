@@ -341,4 +341,20 @@ textarea:focus {
     .brand {
         font-size: 2.1rem;
     }
+
+.hero-image img,
+.image-section img {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.logo {
+    width: 60px;
+    display: block;
+    margin: 0 auto 10px;
+}
 }
