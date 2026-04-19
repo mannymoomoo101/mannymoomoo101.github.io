@@ -3,59 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Common Threats</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cybersecurity Basics | Common Threats</title>
+    <meta name="description" content="Learn about phishing, malware, weak passwords, and public Wi-Fi risks in this beginner-friendly cybersecurity guide.">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">Cybersecurity Basics</a>
+            <p class="tagline">Know the risks before they become a problem.</p>
+        </div>
+    </header>
 
-<header class="site-header">
-    <div class="container">
-        <h1>Cybersecurity Basics</h1>
-        <p class="tagline">Know the risks before they become a problem.</p>
-    </div>
-</header>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-links">
+            <a href="index.html">Home</a>
+            <a href="threats.html">Threats</a>
+            <a href="tips.html">Safety Tips</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<nav class="site-nav" aria-label="Main navigation">
-    <div class="container nav-links">
-        <a href="index.html">Home</a>
-        <a href="threats.html">Threats</a>
-        <a href="tips.html">Safety Tips</a>
-    </div>
-</nav>
+    <main class="container">
+        <section class="page-banner">
+            <p class="eyebrow">COMMON ONLINE RISKS</p>
+            <h1>Threats you should know about</h1>
+            <p>These are some of the most common cybersecurity risks people face online.</p>
+            <a class="button primary" href="tips.html">See How to Stay Safer</a>
+        </section>
 
-<main class="container">
-    <section class="page-banner">
-        <p class="eyebrow">COMMON ONLINE RISKS</p>
-        <h2>Threats you should know about</h2>
-        <p>These are some of the most common online dangers people face today.</p>
-    </section>
+        <section class="card-grid">
+            <article class="card">
+                <div class="card-icon">📩</div>
+                <h2>Phishing</h2>
+                <p>Phishing uses fake messages or websites to trick people into giving away passwords, banking details, or personal information.</p>
+            </article>
 
-    <section class="cards">
-        <article class="card">
-            <span class="card-icon">📩</span>
-            <h3>Phishing</h3>
-            <p>Fake emails, texts, or websites that try to steal private information.</p>
-        </article>
+            <article class="card">
+                <div class="card-icon">💻</div>
+                <h2>Malware</h2>
+                <p>Malware is harmful software that can damage devices, steal information, or track activity.</p>
+            </article>
 
-        <article class="card">
-            <span class="card-icon">💻</span>
-            <h3>Malware</h3>
-            <p>Harmful software that can damage devices, spy on activity, or steal data.</p>
-        </article>
+            <article class="card">
+                <div class="card-icon">🔓</div>
+                <h2>Weak Passwords</h2>
+                <p>Weak or reused passwords make it much easier for attackers to access accounts.</p>
+            </article>
 
-        <article class="card">
-            <span class="card-icon">🔓</span>
-            <h3>Weak Passwords</h3>
-            <p>Easy-to-guess passwords make accounts much easier to break into.</p>
-        </article>
-    </section>
-</main>
+            <article class="card">
+                <div class="card-icon">📶</div>
+                <h2>Public Wi-Fi Risks</h2>
+                <p>Unsecured public networks can expose your information if you log in to sensitive accounts without protection.</p>
+            </article>
+        </section>
 
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2026 Cybersecurity Basics</p>
-    </div>
-</footer>
+        <section class="table-section">
+            <h2>Threat comparison table</h2>
+            <table>
+                <caption>Examples of common online threats and how to reduce the risk</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Threat</th>
+                        <th scope="col">What it does</th>
+                        <th scope="col">How to reduce risk</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Phishing</th>
+                        <td>Tricks users into sharing private information</td>
+                        <td>Check senders, avoid suspicious links, verify websites</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Malware</th>
+                        <td>Damages devices or steals data</td>
+                        <td>Keep software updated and avoid unknown downloads</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Weak Passwords</th>
+                        <td>Makes accounts easier to break into</td>
+                        <td>Use longer, unique passwords and password managers</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Public Wi-Fi</th>
+                        <td>Can expose activity on unsecured networks</td>
+                        <td>Avoid sensitive logins or use trusted protection</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Cybersecurity Basics</h3>
+                <p>Beginner-friendly cybersecurity learning.</p>
+            </div>
+            <div>
+                <h3>Resources</h3>
+                <ul class="footer-list">
+                    <li><a href="https://www.cisa.gov/" target="_blank" rel="noopener noreferrer">CISA</a></li>
+                    <li><a href="https://consumer.ftc.gov/" target="_blank" rel="noopener noreferrer">FTC Consumer Advice</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Cybersecurity Basics</p>
+    </footer>
 </body>
 </html>
