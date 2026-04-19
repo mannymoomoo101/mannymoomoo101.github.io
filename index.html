@@ -3,93 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Basics</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cybersecurity Basics | Home</title>
+    <meta name="description" content="Learn cybersecurity basics, common threats, safe browsing habits, useful tools, and beginner-friendly online safety tips.">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">Cybersecurity Basics</a>
+            <p class="tagline">Secure habits. Smarter browsing. Better protection.</p>
+        </div>
+    </header>
 
-<header class="site-header">
-    <div class="container">
-        <h1>Cybersecurity Basics</h1>
-        <p class="tagline">Secure habits. Smarter browsing. Better protection.</p>
-    </div>
-</header>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="container nav-links">
+            <a href="index.html">Home</a>
+            <a href="threats.html">Threats</a>
+            <a href="tips.html">Safety Tips</a>
+            <a href="tools.html">Tools</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
-<nav class="site-nav" aria-label="Main navigation">
-    <div class="container nav-links">
-        <a href="index.html">Home</a>
-        <a href="threats.html">Threats</a>
-        <a href="tips.html">Safety Tips</a>
-    </div>
-</nav>
-
-<main class="container">
-    <section class="hero">
-        <div class="hero-content">
+    <main class="container">
+        <section class="hero">
             <div class="hero-text">
-                <p class="eyebrow">CYBER AWARENESS</p>
-                <h2>Stay safer online with simple, smart habits.</h2>
+                <p class="eyebrow">BEGINNER CYBERSECURITY</p>
+                <h1>Stay safer online with simple, smart habits.</h1>
                 <p>
-                    Learn how to recognize common threats, protect your accounts,
-                    and make better cybersecurity decisions every day.
+                    This website explains common online threats, safer browsing habits,
+                    useful security tools, and practical steps anyone can use to protect personal information.
                 </p>
                 <div class="hero-buttons">
                     <a class="button primary" href="tips.html">Explore Safety Tips</a>
-                    <a class="button secondary" href="threats.html">View Common Threats</a>
+                    <a class="button secondary" href="threats.html">View Threats</a>
                 </div>
             </div>
 
-            <div class="hero-panel">
-                <div class="panel-glow"></div>
-                <div class="panel-card">
-                    <h3>Quick Focus</h3>
-                    <ul>
-                        <li>Recognize phishing attempts</li>
-                        <li>Use stronger passwords</li>
-                        <li>Turn on two-factor authentication</li>
-                    </ul>
-                </div>
+            <div class="hero-image-card">
+                <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=1200&q=80"
+                     alt="Laptop screen showing digital code in a dark cybersecurity-themed setting">
+            </div>
+        </section>
+
+        <section class="section-heading">
+            <h2>What you will learn</h2>
+            <p>These sections introduce the most important cybersecurity basics.</p>
+        </section>
+
+        <section class="card-grid">
+            <article class="card">
+                <div class="card-icon">🛡️</div>
+                <h3>Common Threats</h3>
+                <p>Learn about phishing, malware, weak passwords, and public Wi-Fi risks.</p>
+                <a class="card-link" href="threats.html">Go to Threats</a>
+            </article>
+
+            <article class="card">
+                <div class="card-icon">🔐</div>
+                <h3>Safety Tips</h3>
+                <p>Use stronger passwords, two-factor authentication, and safer browsing habits.</p>
+                <a class="card-link" href="tips.html">Go to Safety Tips</a>
+            </article>
+
+            <article class="card">
+                <div class="card-icon">🧰</div>
+                <h3>Useful Tools</h3>
+                <p>Review trusted tools and resources that help improve online security.</p>
+                <a class="card-link" href="tools.html">Go to Tools</a>
+            </article>
+        </section>
+
+        <section class="feature-panel">
+            <div>
+                <p class="eyebrow">WHY IT MATTERS</p>
+                <h2>Small steps can make a big difference.</h2>
+                <p>
+                    Cybersecurity is not only for experts. Learning the basics can help anyone
+                    reduce fraud, protect privacy, and browse with more confidence.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Cybersecurity Basics</h3>
+                <p>A beginner-friendly site for learning safer online habits.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="threats.html">Threats</a></li>
+                    <li><a href="tips.html">Safety Tips</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Trusted Resources</h3>
+                <ul class="footer-list">
+                    <li><a href="https://www.cisa.gov/" target="_blank" rel="noopener noreferrer">CISA</a></li>
+                    <li><a href="https://consumer.ftc.gov/" target="_blank" rel="noopener noreferrer">FTC Consumer Advice</a></li>
+                    <li><a href="https://www.nist.gov/" target="_blank" rel="noopener noreferrer">NIST</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <section class="cards">
-        <article class="card">
-            <span class="card-icon">🛡️</span>
-            <h3>Common Threats</h3>
-            <p>Understand phishing, malware, scams, and password attacks.</p>
-        </article>
-
-        <article class="card">
-            <span class="card-icon">🔐</span>
-            <h3>Safer Habits</h3>
-            <p>Build better daily habits that help keep your devices and accounts secure.</p>
-        </article>
-
-        <article class="card">
-            <span class="card-icon">🌐</span>
-            <h3>Why It Matters</h3>
-            <p>Protecting your information helps reduce fraud, privacy loss, and account theft.</p>
-        </article>
-    </section>
-
-    <section class="feature-banner">
-        <div class="feature-text">
-            <p class="eyebrow">ONLINE SECURITY</p>
-            <h2>Small steps can make a big difference.</h2>
-            <p>
-                Cybersecurity is not only for experts. Learning the basics can help
-                anyone browse more safely and avoid common online risks.
-            </p>
-        </div>
-    </section>
-</main>
-
-<footer class="site-footer">
-    <div class="container">
-        <p>&copy; 2026 Cybersecurity Basics</p>
-    </div>
-</footer>
-
+        <p class="copyright">&copy; <span id="year"></span> Cybersecurity Basics</p>
+    </footer>
 </body>
 </html>
