@@ -441,12 +441,17 @@ small {
 }
 
 select {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.2);
+    background-color: #1e2f45;
+    color: #ffffff;
+    font-size: 1rem;
 }
 
+
 select option {
-    background-color: #0f2747;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
 }
