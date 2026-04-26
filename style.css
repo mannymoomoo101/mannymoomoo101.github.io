@@ -52,6 +52,8 @@ a:focus {
     margin: 0 auto;
 }
 
+/* Header */
+
 .site-header {
     padding: 32px 0 20px;
 }
@@ -72,6 +74,8 @@ a:focus {
     margin: 10px 0 0;
     color: var(--text-soft);
 }
+
+/* Navigation */
 
 .site-nav {
     position: sticky;
@@ -105,6 +109,8 @@ a:focus {
     background: rgba(0, 212, 255, 0.18);
     transform: translateY(-2px);
 }
+
+/* Panels */
 
 .hero,
 .page-banner,
@@ -156,6 +162,8 @@ a:focus {
     margin-top: 18px;
 }
 
+/* Buttons */
+
 .button {
     display: inline-block;
     border: none;
@@ -183,6 +191,8 @@ a:focus {
     transform: translateY(-2px);
     box-shadow: 0 10px 24px rgba(0, 212, 255, 0.22);
 }
+
+/* Cards */
 
 .section-heading {
     text-align: center;
@@ -217,6 +227,8 @@ a:focus {
     font-weight: bold;
 }
 
+/* Sections */
+
 .feature-panel,
 .page-banner,
 .table-section,
@@ -236,6 +248,37 @@ a:focus {
 .image-panel {
     padding: 24px;
 }
+
+/* Images */
+
+.hero-image,
+.image-section {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.hero-image img,
+.image-section img {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 212, 255, 0.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image img:hover,
+.image-section img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 25px 55px rgba(0, 212, 255, 0.25);
+}
+
+.image-section {
+    padding: 20px;
+}
+
+/* Table */
 
 table {
     width: 100%;
@@ -266,6 +309,8 @@ th {
     background: rgba(255,255,255,0.08);
 }
 
+/* Forms */
+
 .form-group {
     margin-bottom: 18px;
 }
@@ -295,11 +340,42 @@ textarea:focus {
     outline-offset: 2px;
 }
 
+/* Dropdown fix */
+
+select {
+    background-color: #1e2f45;
+    color: #ffffff;
+}
+
+select option {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+select option:checked {
+    background-color: #1e73d8;
+    color: #ffffff;
+}
+
+small {
+    display: block;
+    margin-top: 6px;
+    color: var(--text-soft);
+}
+
 .success-message {
     margin-top: 14px;
     font-weight: bold;
     color: #98ffcf;
 }
+
+.error-message {
+    margin-top: 14px;
+    font-weight: bold;
+    color: #ffb4b4;
+}
+
+/* Footer */
 
 .site-footer {
     margin-top: 34px;
@@ -330,20 +406,7 @@ textarea:focus {
     color: var(--text-soft);
 }
 
-select {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.2);
-    background-color: #1e2f45;
-    color: #ffffff;
-    font-size: 1rem;
-}
-
-select option {
-    background-color: #ffffff;
-    color: #000000;
-}
+/* Mobile */
 
 @media (max-width: 900px) {
     .hero,
@@ -357,101 +420,15 @@ select option {
         font-size: 2.1rem;
     }
 
-.hero-image,
-.image-section {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0;
-}
+    .hero {
+        padding: 24px;
+    }
 
-.hero-image img,
-.image-section img {
-    width: 100%;
-    max-width: 850px;
-    border-radius: 18px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
+    .nav-links {
+        gap: 8px;
+    }
 
-.hero-image img:hover,
-.image-section img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 25px 55px rgba(0, 212, 255, 0.25);
-}
-
-.image-section {
-    padding: 20px;
-}
-
-.hero-image img {
-    border: 1px solid rgba(0, 212, 255, 0.25);
-}
-.success-message {
-    margin-top: 14px;
-    font-weight: bold;
-    color: #98ffcf;
-}
-
-.error-message {
-    margin-top: 14px;
-    font-weight: bold;
-    color: #ffb4b4;
-}
-
-small {
-    display: block;
-    margin-top: 6px;
-    color: #d3def2;
-}
-.form-card {
-    padding: 28px;
-    margin-bottom: 30px;
-}
-
-.form-group {
-    margin-bottom: 18px;
-}
-
-label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.16);
-    background: rgba(255,255,255,0.08);
-    color: #ffffff;
-    font-size: 1rem;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    outline: 2px solid #00d4ff;
-    outline-offset: 2px;
-}
-
-.success-message {
-    margin-top: 14px;
-    font-weight: bold;
-    color: #98ffcf;
-}
-
-.error-message {
-    margin-top: 14px;
-    font-weight: bold;
-    color: #ffb4b4;
-}
-
-small {
-    display: block;
-    margin-top: 6px;
-    color: #d3def2;
-}
+    .site-nav a {
+        padding: 8px 12px;
+    }
 }
