@@ -371,4 +371,21 @@ textarea:focus {
 .hero-image img {
     border: 1px solid rgba(0, 212, 255, 0.25);
 }
+.success-message {
+    margin-top: 14px;
+    font-weight: bold;
+    color: #98ffcf;
+}
+
+.error-message {
+    margin-top: 14px;
+    font-weight: bold;
+    color: #ffb4b4;
+}
+
+small {
+    display: block;
+    margin-top: 6px;
+    color: #d3def2;
+}
 }
