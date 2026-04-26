@@ -54,6 +54,44 @@ a:focus {
 
 /* Header */
 
+/* === LOGO / BRAND === */
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo-mark {
+    width: 54px;
+    height: 54px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #00d4ff, #00f5c4);
+    color: #06101d;
+    font-size: 1.7rem;
+    box-shadow: 0 0 22px rgba(0, 212, 255, 0.45);
+    transition: 0.3s ease;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 18px rgba(0, 212, 255, 0.45);
+}
+
+/* Hover effect */
+.logo-wrapper:hover .logo-mark,
+.logo-wrapper:focus .logo-mark {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(0, 245, 196, 0.6);
+}
 .site-header {
     padding: 32px 0 20px;
 }
