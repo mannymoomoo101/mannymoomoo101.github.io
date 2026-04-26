@@ -4,107 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cybersecurity Basics | Contact</title>
-    <meta name="description" content="Contact Cybersecurity Basics and submit questions using the website contact form.">
+    <meta name="description" content="Contact Cybersecurity Basics using a secure form with topic options and validation.">
     <link rel="stylesheet" href="./style.css">
     <script defer src="./script.js"></script>
 </head>
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="brand">Cybersecurity Basics</a>
-            <p class="tagline">Ask questions and share feedback.</p>
-        </div>
-    </header>
 
-    <nav class="site-nav" aria-label="Main navigation">
-        <div class="container nav-links">
-            <a href="index.html">Home</a>
-            <a href="threats.html">Threats</a>
-            <a href="tips.html">Safety Tips</a>
-            <a href="tools.html">Tools</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-
-    <main class="container">
-        <section class="page-banner">
-            <p class="eyebrow">CONTACT</p>
-            <h1>Send a question or feedback.</h1>
-        </section>
-
-<form id="contactForm" novalidate>
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input 
-            type="text" 
-            id="name" 
-            name="name" 
-            required 
-            minlength="2" 
-            maxlength="50"
-            autocomplete="name">
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="index.html" class="brand">Cybersecurity Basics</a>
+        <p class="tagline">Ask questions and share feedback.</p>
     </div>
+</header>
 
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input 
-            type="email" 
-            id="email" 
-            name="email" 
-            required 
-            maxlength="80"
-            autocomplete="email">
+<nav class="site-nav" aria-label="Main navigation">
+    <div class="container nav-links">
+        <a href="index.html">Home</a>
+        <a href="threats.html">Threats</a>
+        <a href="tips.html">Safety Tips</a>
+        <a href="tools.html">Tools</a>
+        <a href="contact.html">Contact</a>
     </div>
+</nav>
 
-    <div class="form-group">
-        <label for="topic">Choose a topic</label>
-        <select id="topic" name="topic" required>
-            <option value="" disabled selected>Choose one</option>
-            <option value="passwords">Password Security</option>
-            <option value="phishing">Phishing & Scams</option>
-            <option value="malware">Malware / Viruses</option>
-            <option value="wifi">Public Wi-Fi Safety</option>
-            <option value="privacy">Privacy & Data Protection</option>
-            <option value="accounts">Account Security</option>
-            <option value="tools">Security Tools</option>
-            <option value="feedback">Website Feedback</option>
-            <option value="general">General Question</option>
-        </select>
-    </div>
+<main class="container">
+    <section class="page-banner">
+        <p class="eyebrow">CONTACT</p>
+        <h1>Send a question</h1>
+        <p>Use the form below to ask a question or share website feedback.</p>
+    </section>
 
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea 
-            id="message" 
-            name="message" 
-            rows="6" 
-            required 
-            minlength="10" 
-            maxlength="300"></textarea>
-        <small id="charCount">300 characters remaining</small>
-    </div>
-
-    <button class="button primary" type="submit">Submit Form</button>
-
-    <p id="formMessage" class="success-message" aria-live="polite"></p>
-</form>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <h3>Cybersecurity Basics</h3>
-                <p>Contact page for questions and feedback.</p>
+    <section class="form-card">
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required 
+                    minlength="2" 
+                    maxlength="50"
+                    autocomplete="name">
             </div>
-            <div>
-                <h3>Helpful Links</h3>
-                <ul class="footer-list">
-                    <li><a href="https://www.cisa.gov/" target="_blank" rel="noopener noreferrer">CISA</a></li>
-                    <li><a href="https://consumer.ftc.gov/" target="_blank" rel="noopener noreferrer">FTC Consumer Advice</a></li>
-                </ul>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    maxlength="80"
+                    autocomplete="email">
             </div>
+
+            <div class="form-group">
+                <label for="topic">Choose a topic</label>
+                <select id="topic" name="topic" required>
+                    <option value="" disabled selected>Choose one</option>
+                    <option value="passwords">Password Security</option>
+                    <option value="phishing">Phishing & Scams</option>
+                    <option value="malware">Malware / Viruses</option>
+                    <option value="wifi">Public Wi-Fi Safety</option>
+                    <option value="privacy">Privacy & Data Protection</option>
+                    <option value="accounts">Account Security</option>
+                    <option value="tools">Security Tools</option>
+                    <option value="feedback">Website Feedback</option>
+                    <option value="general">General Question</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="6" 
+                    required 
+                    minlength="10" 
+                    maxlength="300"></textarea>
+                <small id="charCount">300 characters remaining</small>
+            </div>
+
+            <button class="button primary" type="submit">Submit Form</button>
+
+            <p id="formMessage" class="success-message" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h3>Cybersecurity Basics</h3>
+            <p>Contact page for questions and feedback.</p>
         </div>
-        <p class="copyright">&copy; <span id="year"></span> Cybersecurity Basics</p>
-    </footer>
+
+        <div>
+            <h3>Helpful Links</h3>
+            <ul class="footer-list">
+                <li><a href="https://www.cisa.gov/" target="_blank" rel="noopener noreferrer">CISA</a></li>
+                <li><a href="https://consumer.ftc.gov/" target="_blank" rel="noopener noreferrer">FTC Consumer Advice</a></li>
+                <li><a href="https://www.nist.gov/" target="_blank" rel="noopener noreferrer">NIST</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="copyright">&copy; <span id="year"></span> Cybersecurity Basics</p>
+</footer>
+
 </body>
 </html>
